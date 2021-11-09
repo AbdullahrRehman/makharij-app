@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Makharijapp">
         <activity
+            android:name=".test_page"
+            android:exported="true" />
+        <activity
+            android:name=".learn_page"
+            android:exported="true" />
+        <activity
             android:name=".makharij_page"
             android:exported="true" />
         <activity
