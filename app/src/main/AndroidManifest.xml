@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Makharijapp">
         <activity
+            android:name=".shajariyah_page"
+            android:exported="true" />
+        <activity
+            android:name=".tarfiyah_page"
+            android:exported="true" />
+        <activity
+            android:name=".lahatiyah_page"
+            android:exported="true" />
+        <activity
+            android:name=".halqiyah_page"
+            android:exported="true" />
+        <activity
             android:name=".test_page"
             android:exported="true" />
         <activity
