@@ -2,6 +2,7 @@ package com.example.makharij_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -22,6 +23,7 @@ public class test_page extends AppCompatActivity {
     private Button mButtonChoice1;
     private Button mButtonChoice2;
     private Button mButtonChoice3;
+    private Button ButtonQuit;
 
     private String mAnswer;
     private int mScore = 0;
@@ -37,6 +39,7 @@ public class test_page extends AppCompatActivity {
         mButtonChoice1 = (Button)findViewById(R.id.choice1);
         mButtonChoice2 = (Button)findViewById(R.id.choice2);
         mButtonChoice3 = (Button)findViewById(R.id.choice3);
+        ButtonQuit = (Button)findViewById(R.id.quit);
 
         updateQuestion();
 
@@ -106,7 +109,12 @@ public class test_page extends AppCompatActivity {
         });
 
         //End of Button Listener for Button3
-
+        ButtonQuit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInsideActivity();
+            }
+        });
 
 
 
@@ -123,7 +131,11 @@ public class test_page extends AppCompatActivity {
         mQuestionNumber++;
     }
 
-
+    public void openInsideActivity()
+    {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
     private void updateScore(int point) {
         mScoreView.setText("" + mScore);
     }
