@@ -4,6 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#03E0F4"
     tools:context=".test_page">
 
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="283dp"
+        android:layout_height="60dp"
+        android:background="#F3DE2C"
+        android:text="TEST"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="46dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
